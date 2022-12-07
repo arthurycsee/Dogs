@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit A Dog</title>
+</head>
+<body>
+    <h1>Edit A Dog</h1>
+    <form action="/dogs/{{this_dog.id}}/view" method="post">
+        <p>Name</p>
+        <input type="text" name="name" id="name" value="{{this_dog.name}}">
+        <p>Breed</p>
+        <textarea name="breed" id="breed" cols="30" rows="10">{{this_dog.breed}}</textarea>
+        <p>Age</p>
+        <input type="number" name="age" id="age" value="{{this_dog.age}}">
+        <button>Update Doggy</button>
+    </form>
+    
+</body>
+</html>
